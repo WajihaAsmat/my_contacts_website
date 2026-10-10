@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123c35">
+  <meta name="description" content="Download My Contacts for Android. Keep your contacts organized in one place.">
+  <title>My Contacts | Android App</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f8f6;
+      color: #18352f;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: white;
+      border-bottom: 1px solid #e5ece8;
+    }
+
+    .logo {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: #d9f5e6;
+      font-size: 25px;
+    }
+
+    header strong { font-size: 20px; }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 70px 24px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0f3e7;
+      color: #176342;
+      border-radius: 30px;
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 60px);
+      line-height: 1.12;
+      margin: 22px 0;
+      letter-spacing: -1.5px;
+    }
+
+    .intro { color: #61736d; font-size: 18px; }
+
+    .download {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 24px;
+      background: #176342;
+      color: white;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 8px 20px #17634225;
+    }
+
+    .download:hover { background: #104b32; }
+
+    .note { color: #75847e; font-size: 13px; }
+
+    .preview {
+      background: #123c35;
+      color: white;
+      padding: 34px 25px;
+      border-radius: 28px;
+      box-shadow: 0 22px 50px #123c3525;
+    }
+
+    .preview-icon {
+      width: 72px;
+      height: 72px;
+      display: grid;
+      place-items: center;
+      border-radius: 22px;
+      background: #d9f5e6;
+      color: #123c35;
+      font-size: 38px;
+    }
+
+    .contact {
+      background: #ffffff18;
+      border: 1px solid #ffffff25;
+      border-radius: 12px;
+      margin-top: 12px;
+      padding: 13px;
+    }
+
+    .contact small { color: #c5ded3; }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 75px;
+    }
+
+    .feature {
+      padding: 23px;
+      border: 1px solid #e3ebe6;
+      background: white;
+      border-radius: 18px;
+    }
+
+    .feature span { font-size: 28px; }
+    .feature p { color: #687a73; font-size: 14px; }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: #74837d;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      main { padding-top: 42px; }
+      .hero { grid-template-columns: 1fr; }
+      .preview { max-width: 420px; width: 100%; margin: auto; }
+      .features { grid-template-columns: 1fr; margin-top: 45px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">👥</div>
+    <strong>My Contacts</strong>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="tag">ANDROID APPLICATION</span>
+        <h1>Your contacts.<br>Your convenience.</h1>
+        <p class="intro">
+          Keep your contacts organized in one place with
+          My Contacts. Download the Android app and get started.
+        </p>
+
+        <a class="download"
+           href="https://github.com/YOUR-USERNAME/my-contacts-website/releases/latest/download/app-debug.apk">
+          ⬇ Download APK
+        </a>
+
+        <p class="note">
+          Android APK · Free download · Installation may require permission
+          to install apps from this source.
+        </p>
+      </div>
+
+      <div class="preview">
+        <div class="preview-icon">👥</div>
+        <h2>My Contacts</h2>
+        <p style="color:#c5ded3">Your contacts, all in one place.</p>
+
+        <div class="contact">
+          <strong>👤 &nbsp; Alex Morgan</strong><br>
+          <small>Contact preview</small>
+        </div>
+        <div class="contact">
+          <strong>👤 &nbsp; Taylor Smith</strong><br>
+          <small>Contact preview</small>
+        </div>
+        <div class="contact">
+          <strong>👤 &nbsp; Jordan Lee</strong><br>
+          <small>Contact preview</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <span>📇</span>
+        <h3>Manage Contacts</h3>
+        <p>Access your contacts conveniently in one place.</p>
+      </div>
+      <div class="feature">
+        <span>📱</span>
+        <h3>Made for Android</h3>
+        <p>Download the APK and install it on a compatible Android phone.</p>
+      </div>
+      <div class="feature">
+        <span>⬇️</span>
+        <h3>Easy Download</h3>
+        <p>Get the app directly from this website without the Play Store.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    My Contacts · Independent Android application
+  </footer>
+</body>
+</html>
